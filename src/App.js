@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Botao from './componentes/Botao';
 
 function App() {
+  const dados = {
+    nome: "Dierlisson",
+    valor: 100,
+    condicao: false,
+    lista: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Botao nome="Front-end II" ativo={true} data={dados}>
+      Informe algo
+    </Botao>
   );
 }
 

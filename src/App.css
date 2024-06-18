@@ -23,7 +23,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.botao:hover{
+  background-color: #61dafb;
+}
 .App-link {
   color: #61dafb;
 }
